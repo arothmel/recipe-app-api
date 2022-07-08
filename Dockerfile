@@ -10,7 +10,6 @@ WORKDIR /app
 EXPOSE 8000
 
 ARG DEV=false
-# RUN on alpine image to create a virtual safeguarded image on docker
 RUN python -m venv /py && \
     /py/bin/pip install --upgrade pip && \
     apk add --update --no-cache postgresql-client && \
