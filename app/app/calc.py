@@ -8,7 +8,6 @@ def add(x, y):
     return x + y
 
 
-
 def subtract(x, y):
     """Add x and y and return result."""
     r = abs(x - y)
