@@ -14,7 +14,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         """Entrypoint for command"""
-        self.stdout.write('Just waiting for a friend named DB...')
+        self.stdout.write('commands / wait for db / waiting...')
         db_up = False
         while db_up is False:
             try:
