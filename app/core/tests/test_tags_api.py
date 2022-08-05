@@ -84,7 +84,6 @@ class PrivateTagsApiTests(TestCase):
         tag.refresh_from_db()
         self.assertEqual(tag.name, payload['name'])
 
-
     def test_delete_tag(self):
         """Test deleting a tag."""
         tag = Tag.objects.create(user=self.user, name='Breakfast')
